@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Лабораторная работа #2</h1>
+    <div id="controls">
+      <h2>Choose image</h2>
+      <input type="file" id="chooseImage"></input>
+    </div>
+    <div id="gallery">
+      <div class="canvas">
+        <h2>Original</h2>
+        <canvas id="original"></canvas>
+      </div>
+      <div class="canvas">
+        <h2>Luminosity</h2>
+        <canvas id="luminosity"></canvas>
+      </div>
+      <div class="canvas">
+        <h2>Average</h2>
+        <canvas id="average"></canvas>
+      </div>
+      <div class="canvas">
+        <h2>Heatmap</h2>
+        <canvas id="heatmap"></canvas>
+        <div id="description">
+          <p id="leftBound"></p>
+          <canvas id="desc"></canvas>
+          <p id="rightBound"></p>
+        </div>
+      </div>
+    </div>
+    <div id="hist">
+      <h2>Histogram</h2>
+      <canvas width="200px" height="20px" id="histogram"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+˝
